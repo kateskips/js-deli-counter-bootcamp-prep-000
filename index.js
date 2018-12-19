@@ -1,15 +1,23 @@
 //var katzDeliLine = [];
 
-// katzDeliLine : array of strings
+// katzDeliLine : array of number
 // name : string
 // returns a message : string
 //
 // takeANumber takes a line
 // and a name and it pushes the name to the end of the array
 // and returns a string message.
-function takeANumber(katzDeliLine, name) {
-  katzDeliLine.push(name);
-  return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`;
+function takeANumber(katzDeliLine) {
+ 
+  if (katzDeliLine === 0) {
+    
+    return katzDeliLine.unshift();
+  } else {
+    
+  katzDeliLine.push();
+  return `Welcome! You are number ${katzDeliLine.length} in line.`; {
+  }
+ 
 }
 
 // katzDeliLine : array of strings
@@ -49,3 +57,5 @@ function currentLine (katzDeliLine) {
     return msg;
    }
 }
+
+
